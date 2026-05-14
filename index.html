@@ -4,169 +4,196 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taylor-Frank | Web Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- CANVAS BACKGROUND -->
   <canvas id="bg"></canvas>
 
   <!-- NAV -->
-  <nav>
+  <nav id="nav">
     <div class="nav-inner">
-      <div class="nav-logo">TF</div>
-      <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Get in Touch</a>
-      </div>
+      <img src="logo.png" alt="Taylor-Frank" class="nav-logo" />
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-btn">Get in Touch</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Get in Touch</a></li>
+    </ul>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
-      <div class="hero-label">Web Developer · Cicero, IL</div>
-      <h1 class="hero-name">
-        <span class="name-first">Taylor</span>
-        <span class="name-dash">—</span>
-        <span class="name-last">Frank</span>
-      </h1>
-      <p class="hero-line">I build websites that make people stop scrolling.</p>
-      <a href="#contact" class="hero-cta">
-        <span>Let's work together</span>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <div class="hero-scroll">
-        <span>scroll</span>
-        <div class="hero-scroll-line"></div>
+      <div class="hero-top">
+        <span class="hero-tag">Web Developer · Cicero, IL</span>
+        <span class="hero-avail">● Available for projects</span>
+      </div>
+      <div class="hero-logo-wrap">
+        <img src="logo.png" alt="Taylor-Frank" class="hero-logo" />
+      </div>
+      <div class="hero-bottom">
+        <p class="hero-line">I build websites that get businesses noticed.</p>
+        <a href="#contact" class="hero-cta">
+          Start a project
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.75 9h10.5M10 5.25L13.75 9 10 12.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- WHAT I DO -->
-  <section class="what" id="about">
-    <div class="section-inner">
-      <div class="what-grid">
-        <div class="what-left">
-          <span class="eyebrow">What I Do</span>
-          <h2>Websites built<br/><em>from scratch.</em></h2>
-        </div>
-        <div class="what-right">
-          <p>I design and develop custom websites for local businesses — no templates, no page builders, no shortcuts. Clean code, sharp design, and sites that actually work for your customers.</p>
-          <p>Every project starts with understanding your business and ends with something you're proud to show off.</p>
-          <div class="skills-row">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Responsive Design</span>
-            <span>GitHub Pages</span>
-            <span>SEO Basics</span>
-          </div>
-        </div>
-      </div>
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span>Web Design</span><span class="dot">·</span>
+      <span>Custom Development</span><span class="dot">·</span>
+      <span>Mobile Friendly</span><span class="dot">·</span>
+      <span>Local Businesses</span><span class="dot">·</span>
+      <span>Fast Delivery</span><span class="dot">·</span>
+      <span>No Templates</span><span class="dot">·</span>
+      <span>Web Design</span><span class="dot">·</span>
+      <span>Custom Development</span><span class="dot">·</span>
+      <span>Mobile Friendly</span><span class="dot">·</span>
+      <span>Local Businesses</span><span class="dot">·</span>
+      <span>Fast Delivery</span><span class="dot">·</span>
+      <span>No Templates</span><span class="dot">·</span>
     </div>
-  </section>
+  </div>
 
   <!-- WORK -->
   <section class="work" id="work">
     <div class="section-inner">
-      <span class="eyebrow">Selected Work</span>
-      <h2>Recent Projects</h2>
+      <div class="section-head">
+        <div>
+          <p class="label">Selected Work</p>
+          <h2>Recent Projects</h2>
+        </div>
+        <p class="section-desc">Custom sites built from scratch for local Cicero businesses. No templates — every line of code written by hand.</p>
+      </div>
 
-      <div class="projects-grid">
+      <div class="projects">
 
-        <a href="#" class="project-card" target="_blank">
-          <div class="project-num">01</div>
-          <div class="project-info">
-            <h3>Lucky 7 Grill</h3>
-            <p>Restaurant · Cicero, IL</p>
+        <div class="project reveal">
+          <div class="project-left">
+            <span class="project-num">01</span>
+            <div>
+              <h3>Lucky 7 Grill</h3>
+              <p>Restaurant · Cicero, IL</p>
+            </div>
           </div>
           <div class="project-tags">
             <span>Restaurant</span>
             <span>Menu</span>
             <span>Mobile</span>
           </div>
-          <div class="project-arrow">↗</div>
-        </a>
+          <a href="#" target="_blank" class="project-link">View ↗</a>
+        </div>
 
-        <a href="#" class="project-card" target="_blank">
-          <div class="project-num">02</div>
-          <div class="project-info">
-            <h3>Authentic Barber & Beauty</h3>
-            <p>Barbershop · Cicero, IL</p>
+        <div class="project reveal">
+          <div class="project-left">
+            <span class="project-num">02</span>
+            <div>
+              <h3>Authentic Barber & Beauty</h3>
+              <p>Barbershop · Cicero, IL</p>
+            </div>
           </div>
           <div class="project-tags">
             <span>Barbershop</span>
-            <span>Booksy</span>
+            <span>Booking</span>
             <span>Services</span>
           </div>
-          <div class="project-arrow">↗</div>
-        </a>
+          <a href="#" target="_blank" class="project-link">View ↗</a>
+        </div>
 
-        <a href="#" class="project-card" target="_blank">
-          <div class="project-num">03</div>
-          <div class="project-info">
-            <h3>Mr. Taco</h3>
-            <p>Mexican Restaurant · Cicero, IL</p>
+        <div class="project reveal">
+          <div class="project-left">
+            <span class="project-num">03</span>
+            <div>
+              <h3>Mr. Taco</h3>
+              <p>Mexican Restaurant · Cicero, IL</p>
+            </div>
           </div>
           <div class="project-tags">
             <span>Restaurant</span>
             <span>Animated</span>
             <span>Full Menu</span>
           </div>
-          <div class="project-arrow">↗</div>
-        </a>
+          <a href="#" target="_blank" class="project-link">View ↗</a>
+        </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ABOUT STRIP -->
-  <div class="strip">
-    <div class="strip-inner">
-      <div class="strip-item">
-        <span class="strip-num">3+</span>
-        <span class="strip-label">Sites Launched</span>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner about-inner">
+      <div class="about-left reveal">
+        <p class="label">About</p>
+        <h2>Built different.<br/>On purpose.</h2>
+        <p>I'm a web developer based in Cicero, IL focused on building custom websites for local businesses. I walk in with a finished demo and let the work do the talking.</p>
+        <p>Every site I build is coded from scratch — no Wix, no Squarespace, no shortcuts. Fast, clean, and designed to convert visitors into customers.</p>
+        <div class="about-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+          <span>GitHub Pages</span>
+          <span>SEO</span>
+        </div>
       </div>
-      <div class="strip-div"></div>
-      <div class="strip-item">
-        <span class="strip-num">100%</span>
-        <span class="strip-label">Custom Built</span>
-      </div>
-      <div class="strip-div"></div>
-      <div class="strip-item">
-        <span class="strip-num">0</span>
-        <span class="strip-label">Templates Used</span>
-      </div>
-      <div class="strip-div"></div>
-      <div class="strip-item">
-        <span class="strip-num">∞</span>
-        <span class="strip-label">Attention to Detail</span>
+      <div class="about-right reveal">
+        <div class="stat-card">
+          <span class="stat-n">3+</span>
+          <span class="stat-l">Sites Launched</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-n">100%</span>
+          <span class="stat-l">Custom Built</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-n">0</span>
+          <span class="stat-l">Templates Used</span>
+        </div>
+        <div class="stat-card highlight-card">
+          <span class="stat-n">∞</span>
+          <span class="stat-l">Attention to Detail</span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="section-inner contact-inner">
-      <span class="eyebrow">Contact</span>
-      <h2>Have a project<br/>in mind?</h2>
-      <p class="contact-sub">Whether you're a local business without a website or one that needs a better one — let's talk. I'll build you something worth showing off.</p>
-      <a href="mailto:your@email.com" class="contact-btn">
-        <span>Send a Message</span>
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M11 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <p class="contact-note">Email link — update when ready</p>
+      <div class="contact-left reveal">
+        <p class="label">Contact</p>
+        <h2>Let's build something.</h2>
+        <p>Got a business without a website? An outdated one that needs a refresh? Let's talk. I'll come to you with something already built.</p>
+        <a href="mailto:your@email.com" class="contact-btn">
+          Send a Message
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.75 9h10.5M10 5.25L13.75 9 10 12.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="email-note">← Update email when ready</p>
+      </div>
+      <div class="contact-logo-wrap reveal">
+        <img src="logo.png" alt="Taylor-Frank" class="contact-logo" />
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <span class="footer-name">Taylor-Frank</span>
-      <span class="footer-copy">© 2025 · Built from scratch</span>
+      <img src="logo.png" alt="Taylor-Frank" class="footer-logo" />
+      <span class="footer-copy">© 2025 Taylor-Frank · Built from scratch</span>
     </div>
   </footer>
 
