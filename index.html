@@ -7,38 +7,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
 </head>
-<body>
+<body class="off">
 
-  <div class="noise"></div>
+  <!-- LIGHT GLOW -->
+  <div class="glow" id="glow"></div>
 
-  <main>
+  <!-- BULB RIG -->
+  <div class="rig">
+    <div class="wire"></div>
+    <div class="bulb-wrap" id="bulbWrap">
+      <svg class="bulb-svg" id="bulbSvg" viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Cap -->
+        <rect x="28" y="0" width="24" height="8" rx="2" fill="#555"/>
+        <rect x="26" y="7" width="28" height="6" rx="1" fill="#444"/>
+        <!-- Glass -->
+        <path d="M20 45 Q20 20 40 20 Q60 20 60 45 Q60 65 50 75 L50 88 L30 88 L30 75 Q20 65 20 45Z" fill="#1a1a1a" id="bulbGlass"/>
+        <!-- Filament -->
+        <path d="M33 78 L33 60 Q33 52 40 52 Q47 52 47 60 L47 78" stroke="#555" stroke-width="1.2" fill="none" id="filament"/>
+        <path d="M36 60 Q40 55 44 60" stroke="#555" stroke-width="1.2" fill="none" id="filamentTop"/>
+        <!-- Base rings -->
+        <rect x="28" y="86" width="24" height="5" rx="1" fill="#444"/>
+        <rect x="30" y="91" width="20" height="4" rx="1" fill="#3a3a3a"/>
+        <rect x="32" y="95" width="16" height="4" rx="1" fill="#333"/>
+      </svg>
+      <!-- String -->
+      <div class="string-wrap" id="stringWrap">
+        <div class="string" id="string"></div>
+        <div class="string-pull" id="stringPull" title="Pull the string">
+          <div class="pull-knot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- LOGO -->
+  <!-- CONTENT — hidden until light on -->
+  <div class="content" id="content">
     <div class="logo-wrap">
       <h1 class="logo">
-        <span class="logo-line1">Taylor-</span>
-        <span class="logo-line2">Frank</span>
+        <span>Taylor-</span>
+        <span>Frank</span>
       </h1>
     </div>
-
-    <!-- RULE -->
-    <div class="rule"></div>
-
-    <!-- SUB -->
-    <p class="sub">I build websites.</p>
-
-    <!-- CTA -->
-    <a href="mailto:your@email.com" class="cta">
-      <span>Get in Touch</span>
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-
-    <!-- FOOTER -->
-    <p class="foot">© 2025 Taylor-Frank · Web Developer · Cicero, IL</p>
-
-  </main>
+    <p class="tagline">I make websites.</p>
+    <a href="mailto:your@email.com" class="cta">Get in Touch</a>
+    <p class="foot">© 2025 Taylor-Frank · Cicero, IL</p>
+  </div>
 
   <script src="./script.js"></script>
 </body>
