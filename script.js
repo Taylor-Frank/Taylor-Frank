@@ -12,5 +12,5 @@ document.body.appendChild(spotlight);
 window.addEventListener('mousemove', (e) => {
   const x = (e.clientX / window.innerWidth) * 100;
   const y = (e.clientY / window.innerHeight) * 100;
-  spotlight.style.background = `radial-gradient(600px circle at ${x}% ${y}%, rgba(180,180,180,0.04) 0%, transparent 70%)`;
+  spotlight.style.background = `radial-gradient(600px circle at ${x}% ${y}%, rgba(200,200,200,0.09) 0%, transparent 70%)`;
 });
